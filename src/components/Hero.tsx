@@ -4,30 +4,31 @@ import { motion } from 'framer-motion'
 
 export default function Hero() {
   return (
-    <section className="bg-blue-600 text-white py-20">
+    <section className="bg-blue-600 text-white py-32">
       <div className="container mx-auto px-4 text-center">
         <motion.h1 
-          className="text-4xl md:text-5xl font-bold mb-4"
-          initial={{ opacity: 0, y: -20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
-        >
-          Welcome to Our Platform
-        </motion.h1>
-        <motion.p 
-          className="text-xl mb-8"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay: 0.2 }}
+          className="text-5xl font-bold mb-6"
         >
-          Empowering developers to build amazing applications
+          CursorAI와 함께 코딩의 미래를 경험하세요
+        </motion.h1>
+        <motion.p 
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.2 }}
+          className="text-xl mb-8"
+        >
+          AI 기반 코딩 어시스턴트로 개발 생산성을 높이고 
+          프로그래밍의 새로운 가능성을 발견하세요
         </motion.p>
-        <motion.button 
-          className="bg-white text-blue-600 font-bold py-2 px-6 rounded-full text-lg hover:bg-blue-100 transition duration-300"
-          whileHover={{ scale: 1.05 }}
-          whileTap={{ scale: 0.95 }}
+        <motion.button
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.4 }}
+          className="bg-white text-blue-600 px-8 py-3 rounded-full font-semibold hover:bg-blue-50 transition-colors"
         >
-          Get Started
+          지금 시작하기
         </motion.button>
       </div>
     </section>
